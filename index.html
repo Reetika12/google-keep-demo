@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script>
+      function change(list)
+      {
+        console.log("list",list)
+        var val=list.options[list.selectedIndex].value;
+        console.log("val",val)
+        document.getElementById("forms").style.background=val;
+        // document.form.style.color=val;
+      }
+    </script>
   </head>
   <body>
     <div class="header">
@@ -20,14 +30,19 @@
         </div>
     </div>
 
-    <div>
-      <form>
+    <div >
+      <form id="forms" >
         <input id="title" type="text" placeholder="Title" name="title" />
         <p>
           <textarea id="textarea" name="content" placeholder="Take a note..."></textarea>
         </p>
       </form>
-      <button class="add_button" id="addCard">Add</button>
+      <select name="list" onchange="change(this)">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+      </select>
+      <button class="add_button" id="addCard">Add Note</button>
     </div>
     <ul id="showcard"></ul>
     <script src="Home.js"></script>

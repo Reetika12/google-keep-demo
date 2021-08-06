@@ -93,4 +93,6 @@ form textarea{
  align-self: center;
  margin-left: 19%;
 }
-
+select{
+    margin-left: 29%;
+}
