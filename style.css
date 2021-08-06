@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: #ffffff;
+}
+.header{
+    margin: auto -10px;
+    padding: 10px 20px;
+    box-shadow: 0 0 2px 0 rgb(114, 114, 114);
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    height:75px;
+}
+form{
+    position:relative;
+    width:600px;
+    margin:32px auto 2px auto;
+    background: #fff;
+    padding: 7px;
+    border-radius: 7px;
+    box-shadow: 0 1px 7px rgb(128, 128, 128);
+
+}
+form input{
+    width:100%;
+    border:none;
+    padding: 4px 10px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size:1rem;
+}
+form textarea{
+    width:100%;
+    border:none;
+    padding: 4px 10px;
+    outline: none;
+    font-size:1rem;
+}
+.add_button{
+    width:100px;
+    padding: 5px;
+    margin-left: 30%;
+    font-size: 1rem;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 7px rgb(128 128 128);
+    border: none;
+    margin-bottom: 2%;
+    /* margin-left:auto; */
+}
+.note{
+    background: #fff;
+    width:250px;
+    border-radius: 7px;
+    box-shadow: 0 1px 7px rgb(128, 128, 128);
+    padding: 10px;
+    margin: 16px;
+    float: left;
+}
+.note h1{
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+.note p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.delete{
+    width:100px;
+    padding: 5px;
+    margin-right: 1%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 7px rgb(128 128 128);
+    border: none;
+    float: right;
+}
+
+#searchBar {
+ width:500px;
+ height:42px;
+ border-radius: 3px;
+ border:1px solid #eaeaea;
+ padding: 5px 10px;
+ font-size: 16px;
+ align-self: center;
+ margin-left: 19%;
+}
+
