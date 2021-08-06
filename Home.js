@@ -49,6 +49,7 @@ function Note() {
 
 const deleteNote=(index)=>{
  arr.splice(index,1)
+ console.log("delete node",arr)
  localStorage.setItem("data",JSON.stringify(arr))
 let dataList = JSON.parse(localStorage.getItem("data"));
 CommonComponent(dataList)
